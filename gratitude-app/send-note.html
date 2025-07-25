@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Your Note</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script type="module" src="assets/script.js"></script>
+</head>
+<body>
+  <div id="header-container"></div>
+  <main>
+    <section class="send-note-section">
+      <h2>Send Your Note</h2>
+      <form id="send-form">
+        <input id="recipient-email" name="email" type="email" placeholder="Recipient's email" required>
+        <input type="hidden" name="note" id="hidden-note">
+        <div id="note-preview"></div>
+        <div class="button-row">
+          <button type="button" onclick="window.location.href='decorate-note.html'">Back</button>
+          <button type="submit" id="send-note">Send</button>
+        </div>
+      </form>
+      <div id="send-status"></div>
+    </section>
+  </main>
+  <div id="footer-container"></div>
+</body>
+</html>
